@@ -1,0 +1,1096 @@
+[
+
+  {
+    "name" : "admin",
+    "conformanceTest" : false,
+    "mandatory" : false,
+    "requiresWellKnown" : false,
+    "testPlanName" : null,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/admin\\/v\\d+\\/metrics)$"
+    ]
+  },
+  {
+    "name" : "admin-metrics",
+    "conformanceTest" : false,
+    "testPlanName" : "Admin api test",
+    "requiresWellKnown" : false,
+    "mandatory" : true,
+    "certificationUriRegex" : "^https:\\/\\/web\\.conformance\\.directory\\.opinbrasil\\.com\\.br\\/plan-detail\\.html\\?plan=.+&public=true",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/admin\\/v\\d+\\/metrics)$"
+    ]
+  },
+  {
+    "name" : "channels",
+    "conformanceTest" : false,
+    "testPlanName" : null,
+    "requiresWellKnown" : false,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/channels\\/v\\d+\\/banking-agents)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/channels\\/v\\d+\\/branches)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/channels\\/v\\d+\\/electronic-channels)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/channels\\/v\\d+\\/phone-channels)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/channels\\/v\\d+\\/shared-automated-teller-machines)$"
+    ]
+  },
+  {
+    "name" : "channels_banking-agents",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "mandatory" : false,
+    "testPlanName" : "channels-banking-agents_test-plan",
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/channels\\/v\\d+\\/banking-agents)$"
+    ]
+  },
+  {
+    "name" : "channels_branches",
+    "conformanceTest" : false,
+    "requiresWellKnown" : false,
+    "mandatory" : false,
+    "testPlanName" : "Channels - Branches API test plan",
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/channels\\/v\\d+\\/branches)$"
+    ]
+  },
+  {
+    "name" : "channels_electronic-channels",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "mandatory" : false,
+    "testPlanName" : "channels-electronic-channels_test-plan",
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/channels\\/v\\d+\\/electronic-channels)$"
+    ]
+  },
+  {
+    "name" : "channels_phone-channels",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "channels-phone-channels_test-plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/channels\\/v\\d+\\/phone-channels)$"
+    ]
+  },
+  {
+    "name" : "channels_shared-automated-teller-machines",
+    "conformanceTest" : false,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Channels - Shared Automated Teller Machines API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/channels\\/v\\d+\\/shared-automated-teller-machines)$"
+    ]
+  },
+  {
+    "name" : "discovery",
+    "conformanceTest" : false,
+    "requiresWellKnown" : false,
+    "mandatory" : false,
+    "testPlanName" : null,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/discovery\\/v\\d+\\/outages)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/discovery\\/v\\d+\\/status)$"
+    ]
+  },
+  {
+    "name" : "discovery_outages",
+    "conformanceTest" : false,
+    "testPlanName" : "Common api test",
+    "requiresWellKnown" : false,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/discovery\\/v\\d+\\/outages)$"
+    ]
+  },
+  {
+    "name" : "discovery_status",
+    "conformanceTest" : true,
+    "testPlanName" : "Common api test",
+    "requiresWellKnown" : false,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/discovery\\/v\\d+\\/status)$"
+    ]
+  },
+  {
+    "name" : "products-services",
+    "conformanceTest" : false,
+    "testPlanName" : null,
+    "requiresWellKnown" : false,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/business-accounts)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/business-credit-cards)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/business-financings)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/business-invoice-financings)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/business-loans)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/business-unarranged-account-overdraft)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/personal-accounts)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/personal-credit-cards)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/personal-financings)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/personal-invoice-financings)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/personal-loans)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/personal-unarranged-account-overdraft)$"
+    ]
+  },
+  {
+    "name" : "products-services_business-accounts",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "products-and-services-business-accounts_test-plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/business-accounts)$"
+    ]
+  },
+  {
+    "name" : "products-services_business-credit-cards",
+    "conformanceTest" : false,
+    "requiresWellKnown" : false,
+    "testPlanName" : "ProductsNServices - BusinessCreditCard API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/business-credit-cards)$"
+    ]
+  },
+  {
+    "name" : "products-services_business-financings",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "products-and-services-business-financings_test-plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/business-financings)$"
+    ]
+  },
+  {
+    "name" : "products-services_business-invoice-financings",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "products-and-services-business-invoice-financings_test-plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/business-invoice-financings)$"
+    ]
+  },
+  {
+    "name" : "products-services_business-loans",
+    "conformanceTest" : false,
+    "requiresWellKnown" : false,
+    "testPlanName" : "ProductsNServices - BusinessLoans API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/business-loans)$"
+    ]
+  },
+  {
+    "name" : "products-services_business-unarranged-account-overdraft",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "products-and-services-business-unarranged-account-overdraft_test-plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/business-unarranged-account-overdraft)$"
+    ]
+  },
+  {
+    "name" : "products-services_personal-accounts",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "products-and-services-personal-accounts_test-plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/personal-accounts)$"
+    ]
+  },
+  {
+    "name" : "products-services_personal-credit-cards",
+    "conformanceTest" : false,
+    "requiresWellKnown" : false,
+    "testPlanName" : "ProductsNServices - PersonalCreditCard API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/personal-credit-cards)$"
+    ]
+  },
+  {
+    "name" : "products-services_personal-financings",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "products-and-services-personal-financings_test-plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/personal-financings)$"
+    ]
+  },
+  {
+    "name" : "products-services_personal-invoice-financings",
+    "conformanceTest" : false,
+    "requiresWellKnown" : false,
+    "testPlanName" : "ProductsNServices PersonalInvoiceFinancings API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/personal-invoice-financings)$"
+    ]
+  },
+  {
+    "name" : "products-services_personal-loans",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "products-and-services-personal-loans_test-plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/personal-loans)$"
+    ]
+  },
+  {
+    "name" : "products-services_personal-unarranged-account-overdraft",
+    "conformanceTest" : false,
+    "requiresWellKnown" : false,
+    "testPlanName" : "ProductsNServices - UnarrangedAccountPersonalOverdraft API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/products-services\\/v\\d+\\/personal-unarranged-account-overdraft)$"
+    ]
+  },
+  {
+    "name" : "accounts",
+    "conformanceTest" : false,
+    "testPlanName" : null,
+    "requiresWellKnown" : true,
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/accounts\\/v\\d+\\/accounts)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/accounts\\/v\\d+\\/accounts\\/\\{accountId})$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/accounts\\/v\\d+\\/accounts\\/\\{accountId}\\/balances)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/accounts\\/v\\d+\\/accounts\\/\\{accountId}\\/transactions)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/accounts\\/v\\d+\\/accounts\\/\\{accountId}\\/overdraft-limits)$"
+    ]
+  },
+  {
+    "name" : "consents",
+    "conformanceTest" : false,
+    "testPlanName" : null,
+    "requiresWellKnown" : true,
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/consents\\/v\\d+\\/consents\\/\\{consentId})$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/consents\\/v\\d+\\/consents)$"
+    ]
+  },
+  {
+    "name" : "credit-cards-accounts",
+    "conformanceTest" : false,
+    "testPlanName" : null,
+    "requiresWellKnown" : true,
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/credit-cards-accounts\\/v\\d+\\/accounts)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/credit-cards-accounts\\/v\\d+\\/accounts\\/\\{creditCardAccountId})$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/credit-cards-accounts\\/v\\d+\\/accounts\\/\\{creditCardAccountId}\\/limits)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/credit-cards-accounts\\/v\\d+\\/accounts\\/\\{creditCardAccountId}\\/transactions)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/credit-cards-accounts\\/v\\d+\\/accounts\\/\\{creditCardAccountId}\\/bills)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/credit-cards-accounts\\/v\\d+\\/accounts\\/\\{creditCardAccountId}\\/bills\\/\\{billId}\\/transactions)$"
+    ]
+  },
+  {
+    "name" : "customers-business",
+    "conformanceTest" : false,
+    "testPlanName" : null,
+    "requiresWellKnown" : true,
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/customers\\/v\\d+\\/business\\/identifications)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/customers\\/v\\d+\\/business\\/qualifications)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/customers\\/v\\d+\\/business\\/financial-relations)$"
+    ]
+  },
+  {
+    "name" : "customers-personal",
+    "conformanceTest" : false,
+    "testPlanName" : null,
+    "requiresWellKnown" : true,
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/customers\\/v\\d+\\/personal\\/identifications)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/customers\\/v\\d+\\/personal\\/qualifications)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/customers\\/v\\d+\\/personal\\/financial-relations)$"
+    ]
+  },
+  {
+    "name" : "financings",
+    "conformanceTest" : false,
+    "testPlanName" : null,
+    "requiresWellKnown" : true,
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/financings\\/v\\d+\\/contracts)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/financings\\/v\\d+\\/contracts\\/\\{contractId})$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/financings\\/v\\d+\\/contracts\\/\\{contractId}\\/warranties)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/financings\\/v\\d+\\/contracts\\/\\{contractId}\\/payments)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/financings\\/v\\d+\\/contracts\\/\\{contractId}\\/scheduled-instalments)$"
+    ]
+  },
+  {
+    "name" : "invoice-financings",
+    "conformanceTest" : false,
+    "testPlanName" : null,
+    "requiresWellKnown" : true,
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/invoice-financings\\/v\\d+\\/contracts)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/invoice-financings\\/v\\d+\\/contracts\\/\\{contractId})$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/invoice-financings\\/v\\d+\\/contracts\\/\\{contractId}\\/warranties)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/invoice-financings\\/v\\d+\\/contracts\\/\\{contractId}\\/payments)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/invoice-financings\\/v\\d+\\/contracts\\/\\{contractId}\\/scheduled-instalments)$"
+    ]
+  },
+  {
+    "name" : "loans",
+    "conformanceTest" : false,
+    "testPlanName" : null,
+    "requiresWellKnown" : true,
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/loans\\/v\\d+\\/contracts)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/loans\\/v\\d+\\/contracts\\/\\{contractId})$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/loans\\/v\\d+\\/contracts\\/\\{contractId}\\/warranties)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/loans\\/v\\d+\\/contracts\\/\\{contractId}\\/payments)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/loans\\/v\\d+\\/contracts\\/\\{contractId}\\/scheduled-instalments)$"
+    ]
+  },
+  {
+    "name" : "resources",
+    "conformanceTest" : false,
+    "testPlanName" : null,
+    "requiresWellKnown" : true,
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/resources\\/v\\d+\\/resources)$"
+    ]
+  },
+  {
+    "name" : "unarranged-accounts-overdraft",
+    "testPlanName" : null,
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/unarranged-accounts-overdraft\\/v\\d+\\/contracts)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/unarranged-accounts-overdraft\\/v\\d+\\/contracts\\/\\{contractId})$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/unarranged-accounts-overdraft\\/v\\d+\\/contracts\\/\\{contractId}\\/warranties)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/unarranged-accounts-overdraft\\/v\\d+\\/contracts\\/\\{contractId}\\/payments)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/unarranged-accounts-overdraft\\/v\\d+\\/contracts\\/\\{contractId}\\/scheduled-instalments)$"
+    ]
+  },
+  {
+    "name" : "payments-consents",
+    "testPlanName" : null,
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/payments\\/v\\d+\\/consents)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/payments\\/v\\d+\\/consents\\/\\{consentId})$"
+    ]
+  },
+  {
+    "name" : "payments-pix",
+    "conformanceTest" : false,
+    "testPlanName" : null,
+    "requiresWellKnown" : true,
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/payments\\/v\\d+\\/pix\\/payments)$",
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/payments\\/v\\d+\\/pix\\/payments\\/\\{paymentId})$"
+    ]
+  },
+  {
+    "name" : "products-services_auto-insurance",
+    "conformanceTest" : true,
+    "testPlanName" : "Open Insurance - ProductsNServices - Auto Insurance API test",
+    "mandatory" : false,
+    "requiresWellKnown" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/auto-insurance\\/\\{commercializationArea}\\/\\{fipeCode}\\/\\{year}\\/?)$"
+    ]
+  },
+  {
+    "name" : "opendata-investments_funds",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "opendata-investments-funds_test-plan",
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/opendata-investments\\/v\\d+\\/funds)$"
+    ]
+  },
+  {
+    "name" : "opendata-investments_bank-fixed-incomes",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "opendata-investments-bank-fixed-income_test-plan",
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/opendata-investments\\/v\\d+\\/bank-fixed-incomes)$"
+    ]
+  },
+  {
+    "name" : "opendata-investments_credit-fixed-incomes",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "opendata-investments-credit-fixed-income_test-plan",
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/opendata-investments\\/v\\d+\\/credit-fixed-incomes)$"
+    ]
+  },
+  {
+    "name" : "opendata-investments_variable-incomes",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "opendata-investments-variable-incomes_test-plan",
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/opendata-investments\\/v\\d+\\/variable-incomes)$"
+    ]
+  },
+  {
+    "name" : "opendata-investments_treasure-titles",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "opendata-investments-treasure-titles_test-plan",
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/opendata-investments\\/v\\d+\\/treasure-titles)$"
+    ]
+  },
+  {
+    "name" : "opendata-acquiring-services_personals",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "opendata-acquiring-services-personal_test-plan",
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/opendata-acquiring-services\\/v\\d+\\/personals)$"
+    ]
+  },
+  {
+    "name" : "opendata-acquiring-services_businesses",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "opendata-acquiring-services-business_test-plan",
+    "mandatory" : true,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-banking\\/opendata-acquiring-services\\/v\\d+\\/businesses)$"
+    ]
+  },
+  {
+    "name" : "products-services_person",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsNServices - Person API test",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/person)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_pension-plan",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsNServices - Pension Plan API test",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/pension-plan)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_auto-insurance",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsNServices - Auto Insurance API test",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/auto-insurance\\/\\{commercializationArea}\\/\\{fipeCode}\\/\\{year}\\/?)$"
+    ]
+  },
+  {
+    "name" : "products-services_home-insurance",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsNServices - Home Insurance API test",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/home-insurance\\/commercializationArea\\/\\{commercializationArea}\\/?)$"
+    ]
+  },
+  {
+    "name" : "products-services_capitalization-title",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsNServices - Capitalization Title API test",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/capitalization-title)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_life-pension",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsNServices - Life Pension API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/life-pension)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "channels_electronic-channels",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - Channels - Electronic Channels API test",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/channels\\/v\\d+\\/electronic-channels)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "channels_phone-channels",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - Channels - Phone Channels API test",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/channels\\/v\\d+\\/phone-channels)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "discovery_status",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - Discovery Status API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/discovery\\/v\\d+\\/status)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_assistance-general-assets",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Assistance General Assets API test",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/assistance-general-assets)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_auto-extended-warranty",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Auto Extended Warranty API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/auto-extended-warranty)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_business",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Business API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/business)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_condominium",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Condominium API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/condominium)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_cyber-risk",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Cyber Risk API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/cyber-risk)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_directors-officers-liability",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Directors Officers Liability API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/directors-officers-liability)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_domestic-credit",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Domestic Credit API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/domestic-credit)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_engineering",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Engineering API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/engineering)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_environmental-liability",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Environmental Liability API test",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/environmental-liability)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_equipment-breakdown",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Equipment Breakdown API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/equipment-breakdown)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_errors-omissions-liability",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Errors Omissions Liability API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/errors-omissions-liability)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_export-credit",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Export Credit API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/export-credit)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_extended-warranty",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Extended Warranty API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/extended-warranty)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_financial-risk",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Financial Risk API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/financial-risk)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_general-liability",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - General Liability API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/general-liability)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_global-banking",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Global Banking API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/global-banking)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_lost-profit",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Lost Profit API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/lost-profit)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_named-operational-risks",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Named Operational Risks API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/named-operational-risks)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_private-guarantee",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Private Guarantee API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/private-guarantee)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_public-guarantee",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Public Guarantee API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/public-guarantee)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_rent-guarantee",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Rent Guarantee API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/rent-guarantee)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_stop-loss",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Stop Loss API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/stop-loss)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_housing",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Housing API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/housing)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "channels_intermediary",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - Channels - Intermediary API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/channels\\/v\\d+\\/intermediary\\/\\{countrySubDivision}\\/?)$"
+    ]
+  },
+  {
+    "name" : "products-services_other-scopes",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Others Scopes API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/others-scopes)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "channels_referenced-network",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - Channels - Referenced Network API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/channels\\/v\\d+\\/referenced-network\\/\\{countrySubDivision}\\/\\{serviceType}\\/?)$"
+    ]
+  },
+  {
+    "name" : "products-services_rural",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Rural API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/rural)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "products-services_transport",
+    "conformanceTest" : true,
+    "requiresWellKnown" : false,
+    "testPlanName" : "Open Insurance - ProductsServices - Transport API test plan",
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/products-services\\/v\\d+\\/transport)(\\?(?=[?]).*|$)$"
+    ]
+  },
+  {
+    "name" : "consents",
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "testPlanName" : null,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/consents\\/v\\d+)$"
+    ]
+  },
+  {
+    "name" : "resources",
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "testPlanName" : null,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/resources\\/v\\d+)$"
+    ]
+  },
+  {
+    "name" : "customers-personal",
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "testPlanName" : null,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/customers\\/v\\d+\\/personal)$"
+    ]
+  },
+  {
+    "name" : "customers-business",
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "testPlanName" : null,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/customers\\/v\\d+\\/business)$"
+    ]
+  },
+  {
+    "name" : "patrimonial",
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "testPlanName" : null,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/insurance-patrimonial\\/v\\d+)$"
+    ]
+  },
+  {
+    "name" : "responsibility",
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "testPlanName" : null,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/insurance-responsibility\\/v\\d+)$"
+    ]
+  },
+  {
+    "name" : "financial-risk",
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "testPlanName" : null,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/insurance-financial-risk\\/v\\d+)$"
+    ]
+  },
+  {
+    "name" : "acceptance-and-branches-abroad",
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "testPlanName" : null,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/insurance-acceptance-and-branches-abroad\\/v\\d+)$"
+    ]
+  },
+  {
+    "name" : "rural",
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "testPlanName" : null,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/insurance-rural\\/v\\d+)$"
+    ]
+  },
+  {
+    "name" : "auto",
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "testPlanName" : null,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/insurance-auto\\/v\\d+)$"
+    ]
+  },
+  {
+    "name" : "transport",
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "testPlanName" : null,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/insurance-transport\\/v\\d+)$"
+    ]
+  },
+  {
+    "name" : "housing",
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "testPlanName" : null,
+    "mandatory" : false,
+    "certificationUriRegex" : "^(https:\\/\\/.+)((.zip)|(.json))$",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/insurance-housing\\/v\\d+)$"
+    ]
+  },
+  {
+    "name" : "endorsement",
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "testPlanName" : null,
+    "mandatory" : false,
+    "certificationUriRegex" : "(^https:\\/\\/.+.zip)",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/endorsement\\/v\\d+)$"
+    ]
+  },
+  {
+    "name" : "claim-notification",
+    "conformanceTest" : false,
+    "requiresWellKnown" : true,
+    "testPlanName" : null,
+    "mandatory" : false,
+    "certificationUriRegex" : "(^https:\\/\\/.+.zip)",
+    "endpoints" : [
+      "^(https:\\/\\/)(.*?)(\\/open-insurance\\/claim-notification\\/v\\d+)$"
+    ]
+  }
+]
